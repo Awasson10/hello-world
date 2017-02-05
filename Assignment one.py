@@ -32,8 +32,10 @@ print (X, " * ", Y, " = ", X*Y)
 print (X, " / ", Y, " = ", X/Y)
 
 #problem 5
+#asks user for current age and when the want to retirer. Sweet stuff
 x= input("What is your current age?  ")
 y= input("What age would you like to retire? ")
+#changes the string over to integers and stuff. WHAT WHAT? ? 
 X=int(x)
 Y=int(y)
 print ("You have", Y-X, "years left until you can retire.")
@@ -70,8 +72,23 @@ Zep = (yz-ZAA)
 #prints out answers to inputs asked by program
 print( X, "people with", Y, "pizza's")
 print("each mofo get's ", Zep, "slices")
-print("you got", ZAA, "slices left over")
-#problem 8  
+print("you got", ZAA, "slices left over")2
+#problem 8
+#Import Math Function
+import math
+#Ask user for length and width of the room for input
+length = float(input("What is the length of the room in feet?"))
+width = float(input("What is the width of the room in feet?"))
+#Converts the length and width of the room into totla size
+total_size = length * width
+#Converts the amount into 350 for the purpose of this program
+convert = 350
+#Performs the math for the total size of the room and the number of gallons required per room
+gallons = math.ceil(total_size / convert)
+output = "You will need to purchase {} gallons of paint to cover {} square feet".format(gallons, total_size)
+
+print(output)
+
 #Problem 9
 #Ask user for three item prices, and quantitys and calculates cost, with tax
 #User inputs informaiton for price and Quantity
